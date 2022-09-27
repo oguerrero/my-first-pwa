@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './App.css'
+import { Ejercicio67 } from './Ejercicio67'
 
 function App() {
   const initialState: string[] = []
@@ -17,13 +18,14 @@ function App() {
       <header className='App-header'>
         <h1>** Proyecto PWA - Lista de Compras v2 **</h1>
         <div>
+          <Ejercicio67 />
           <input
             placeholder='Item'
             type='text'
             onChange={(e) => setNewItem(e.target.value)}
-            onKeyDown={e => e.key === 'Enter' && addNewItem()}
+            onKeyDown={(e) => e.key === 'Enter' && addNewItem()}
             value={newItem}
-            style={{padding: '8px 15px'}}
+            style={{ padding: '8px 15px' }}
           />
           <button
             onClick={addNewItem}
