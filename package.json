@@ -33,7 +33,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server-prod": "npm run build && serve -s -l 5000"
+    "server-prod": "npm run build && serve build -s -l 5000"
   },
   "eslintConfig": {
     "extends": [
